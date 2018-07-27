@@ -11,7 +11,196 @@
     <title>InstaGroan Internal Wiki</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">InstaGroan Internal Wiki</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="references.html">References</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="context.html">Context Memo</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <h2>Basic Block Feature Outline</h2>
+
+      <div class="row">
+        <div class="col col-sm-2">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title" id="Contents">Contents</h5>
+              <p class="card-text">
+                  <ul>
+                    <li><a href="#Problem"><span>1</span>
+                      <span>Problem</span></a>
+                    </li>
+                    <li>
+                      <a href="#Solution">
+                        <span>2</span> 
+                        <span>Solution</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Implementation">
+                        <span>3</span>
+                        <span>Implementation</span>
+                      </a>
+                      <ul>
+                        <li>
+                          <a href="#UITeam">
+                            <span>3.1</span>
+                            <span>UI Team</span>
+                          </a>
+                        </li>
+                        <li>
+                           <a href="#Backend">
+                            <span>3.2</span>
+                            <span>Backend Team</span>
+                          </a>                        
+                        </li>
+                        <li>
+                          <a href="#Document">
+                            <span>3.3</span>
+                            <span>Document Team</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#DoD">
+                        <span>4</span>
+                        <span>Definition of Done</span>
+                      </a>
+                    </li>
+                  </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12" style="height:50px;"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="card">
+            <div class="card-header" id="Problem">
+              <h1>The Problem:</h1>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Instagroan’s astronomical rise in popularity as the worlds premiere photo sharing application has been a wonderful ride, the level of success we have achieved in a few  short years is unprecedented. While this success has had plenty of benefits, both to the company and the 1 Billion users that use our app on a daily basis to share life’s precious moments with their friends, families and complete strangers, there has also been some unforeseen consequences. 
+              </p>
+              <p class="card-text">
+                While early on in our applications history plenty of wonderful pictures of everyday moments were shared, however as the applications popularity surged a funny thing started to happen, users realized they could be come “Instagroan celebrities”, while this phenomenon has certainly led to some of our users carving out a unique new career for themselves peddling luxury merchandise, far more often it has led users down a dark path of Instagroan addiction where they spend hours and hours trying to share the best photo they can, completely unaware that these photos are actually pretty basic and highly unlikely to lead to the lifestyle change they so desperately desire.      
+              </p>
+              <p class="card-text">
+                In the past year there has been a steady decline in daily active users, the leading theory is that this lack of originality is getting old and users are getting bored with seeing the same images over and over again. The company has decided that the first step to addressing this problem is letting our users know that it is a problem. 
+              </p>
+              <a href="#Contents" class="btn btn-primary">Back to Contents</a>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12" style="height:50px;"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="card">
+            <div class="card-header" id="Solution">
+              <h1>The Solution:</h1>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                 Our solution will leverage our massive database of user submitted images along with our advances in machine learning and data processing to flag user images as unoriginal. The company feels as though if users were made aware of the hundred of thousands of images similar to the one they are about to post, then perhaps they may not feel such an impulse to share one more. This will hopefully lead to an increased level of self awareness among our userbase and lead to more responsible usage of our application. 
+              </p>
+              <p class="card-text">
+                Implementing this solution will require the UI and Backend teams to coordinate in order to ensure a successful rollout of this feature. I will outline each teams roles in this feature in the rest of this wiki.     
+              </p>
+              <a href="#Contents" class="btn btn-primary">Back to Contents</a>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12" style="height:50px;"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="card">
+            <div class="card-header" id="Implementation">
+              <h1>The Implementation:</h1>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title" id="UITeam">UI Team</h5>
+              <p class="card-text">
+                The UI team will have their work cut out for them in implementing this feature. We need inform users that their images are unoriginal without hurting their feelings. This is a delicate issue and needs to be handled with the utmost respect to our user base. Users could be gently informed of the number of similar images posted by other users, this blow could be softened by the use of fun emojis that correlate with the level of basicness the image portrays.
+              </p>
+              <p class="card-text">
+                In order to get a feel for how the UI might look some mocked data has been created in order to assist the UI team with their integration. Once the backend team has got their endpoints completed then the UI team should be able to seamlessly switch over to live data. 
+              </p>
+              <p class="card-text">
+                There are several things that need to be handled from a UI perspective, the picture must be sent to the backend in order to be processed by our state of the art image analysis software, once the image has been processed and received an originality indicator the results need to be presented to the user in a tactful manner. One idea has been mentioned is to show the users the amount of pictures similar to theirs that have already been posted. This could be done on a regional basis, which we hope will make the results hit closer to home for the users.
+              </p>
+              <h5 class="card-title" id="Backend">Backend Team</h5>
+              <p class="card-text">
+                The UI is going to need an endpoint to send the pictures for processing, this endpoint will need to receive the photo and then use out image analysis to come up with a score for originality. The formula for how original a photo is has not been completely hashed out at this point in time, but a good place to start would be comparing how many similar images have been taken at a certain location. Worldwide statistics would be important as well but it is thought that regional results will have the most impact.
+              </p>
+              <h5 class="card-title" id="Document">Document Team</h5>
+              <p class="card-text">
+                As with any new feature there is going to be plenty of documentation to go along with it. The documentation team has already been made aware of the new feature and has started drafting up internal documentation as well as customer facing documentation. There is potential for this feature to be controversial so it is imperative that the documentation team frame this feature in the best possible light from the get go. Users need to feel empowered by this new feature not threatened. 
+              </p>
+              <a href="#Contents" class="btn btn-primary">Back to Contents</a>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12" style="height:50px;"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="card">
+            <div class="card-header" id="DoD">
+              <h1>Definition of Done:</h1>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                This feature will be considered completed when a picture is able to be successfully submitted to the backend for processing and a originality score is presented by the UI. As stated before the UI team is able to get started on this ASAP as there is already mocked data ready to be utilized to assist in their integration. 
+              </p>
+              <a href="#Contents" class="btn btn-primary">Back to Contents</a>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
